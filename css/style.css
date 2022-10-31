@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  /*  gets rid of all browser defaults  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+#banner {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+/* dimensions for both main boxes */
+.box {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #000;
+  position: relative;
+  /* ^makes our boxes be relative to their normal position WITHIN the columns */
+}
+
+/* the content box */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  background-color: #000;
+}
+
+/* the images box */
+.images {
+  background-color: #ddd;
+}
+
+.content header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .marvel-logo img {
+  max-width: 200px;
+}
+
+header ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+
+header ul li a:hover {
+  opacity: 1;
+  color: red;
+}
+
+.main-text img {
+  width: 100%;
+  height: 300px;
+  border-radius: 40%;
+  border: 1px solid #d00d19;
+}
+
+.main-text p {
+  font-size: 1em;
+  color: red;
+  font-weight: bold;
+  transform: translateY(30px);
+  font-family: Rock Salt;
+  text-align: center;
+}
+
+.content .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+.footer h3 {
+  color: red;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+.footer h3:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer li a img {
+  width: 45px;
+  border-radius: 20px;
+}
+
+#banner .images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img1,
+.img2,
+.img3 {
+  width: 50%;
+  position: relative;
+  height: 50vh;
+}
+
+.img1 img,
+.img2 img,
+.img3 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img3 {
+  width: 100%;
+}
+
+.img1 img {
+  width: 370px;
+}
